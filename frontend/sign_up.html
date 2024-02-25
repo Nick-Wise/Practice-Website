@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- NavBar Section -->
+     <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Next</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech.html" class="navbar__links">
+                        Tech
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">
+                        About
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="sign_up.html" class="button">
+                        Sign up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  
+<!-- Sighn Up Section. -->
+<div class="sign_up_container">
+    <div class="sign_up_form">
+        <h1>Sign Up Now</h1>
+        <form id="addUserForm" class="form">
+            <div id="users">
+                <!-- Existing user input fields here -->
+            </div>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input id="addUserBtn" type="submit" value="Add User">
+        </form>
+        <button onclick="loadUsers()">Load Users</button>
+    </div>
+</div>
+</body>
+    <script src="app.js"></script>
+</html>
